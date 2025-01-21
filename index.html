@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Air - Especialistas en Climatización</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Super Air</h1>
+        <p>Especialistas en climatización</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#propuesta">Propuesta de Valor</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="propuesta">
+            <h2>Propuesta de Valor</h2>
+            <p>Somos especialistas en climatización, con técnicos certificados y la mejor atención personalizada. Desde hogares hasta proyectos industriales, garantizamos calidad y rapidez, siempre con precios competitivos.</p>
+        </section>
+
+        <section id="historia">
+            <h2>Nuestra Historia</h2>
+            <p>Desde 2018, Super Air ha transformado la manera en que hogares, negocios e industrias en Querétaro experimentan el confort climático. Nacimos con una misión clara: ofrecer soluciones confiables y accesibles de climatización, respaldadas por un equipo profesional y comprometido.</p>
+            <p>Hoy, con años de experiencia y cientos de clientes satisfechos, seguimos avanzando como líderes en calidad, innovación y servicio personalizado.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>AC para hogar</li>
+                <li>AC para industria</li>
+                <li>Equipo ligero</li>
+                <li>HVAC</li>
+                <li>Instalación</li>
+                <li>Venta</li>
+                <li>Reparación</li>
+            </ul>
+        </section>
+
+        <section id="mision-vision">
+            <h2>Misión</h2>
+            <p>Ofrecemos soluciones de climatización profesionales, con venta, instalación, reparación y mantenimiento de aires acondicionados, con servicio de calidad.</p>
+
+            <h2>Visión</h2>
+            <p>Ser líderes en aire acondicionado en el Bajío, reconocidos por innovación, calidad y excelencia en el servicio, con soluciones que garanticen satisfacción del cliente, generando un entorno sostenible.</p>
+        </section>
+
+        <section id="valores">
+            <h2>Valores</h2>
+            <ul>
+                <li>Calidad</li>
+                <li>Honestidad</li>
+                <li>Confianza</li>
+                <li>Flexibilidad</li>
+                <li>Servicio</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Fotos de Instalaciones</h2>
+            <div class="carousel">
+                <img src="instalacion1.jpg" alt="Instalación 1">
+                <img src="instalacion2.jpg" alt="Instalación 2">
+                <img src="instalacion3.jpg" alt="Instalación 3">
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas de Google</h2>
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </blockquote>
+        </section>
+
+        <section id="clientes">
+            <h2>Algunos de Nuestros Clientes</h2>
+            <ul>
+                <li>Logis Express</li>
+                <li>Mausoleos</li>
+                <li>Colegio Wexford</li>
+                <li>Arinso Integral</li>
+                <li>IMSS</li>
+                <li>Qrobus</li>
+                <li>WTC Juriquilla</li>
+                <li>Parrilla Leonesa</li>
+                <li>Hotel Flamingo</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Super Air - Todos los derechos reservados.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #0074D9;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.carousel');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            carousel.addEventListener('mousedown', (e) => {
+                isDown = true;
+                carousel.classList.add('active');
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                isDown = false;
+                carousel.classList.remove('active');
+            });
+
+            carousel.addEventListener('mouseup', () => {
+                isDown = false;
+                carousel.classList.remove('active');
+            });
+
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 3; //scroll-fast
+                carousel.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+</body>
+</html>
