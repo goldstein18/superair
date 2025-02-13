@@ -34,13 +34,15 @@
 
 .overlay-text {
     position: absolute;
-    bottom:35%;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     font-weight: bold;
     z-index: 2; /* Ensure text is above overlay */
-    margin-left:5%;
+    text-align: center;
+    width: 100%;
 }
 
 .overlay-text p {
@@ -160,4 +162,40 @@
     object-fit: contain;
     border-radius: 10px;
   }
+  
+
+  .g-6 {
+    --bs-gutter-x: 4rem; /* Adjust horizontal spacing */
+    --bs-gutter-y: 4rem; /* Adjust vertical spacing */
+  }
+
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Pegado al lado izquierdo */
+    z-index: 1000;
+}
+
+.whatsapp-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Ajusta el tamaño del icono */
+    height: 60px;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon a:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+    width: 35px;
+    height: 35px;
+}
+
   
