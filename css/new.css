@@ -63,6 +63,9 @@
 
     
 }
+#desktop-hide {
+    display: none !important;
+}
 
 .new-logo img {
     max-width: 500px!important;
@@ -154,6 +157,14 @@
     .vertical {
         display: block;
     }
+
+    #mobile-show {
+        display: none;
+    }
+    #desktop-hide {
+        display: block !important;
+     
+    }
 }
 
 
@@ -209,4 +220,5 @@
     height: 35px;
 }
 
-  
+
+
