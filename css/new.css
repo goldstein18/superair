@@ -104,13 +104,24 @@
     .overlay-text {
         position: absolute;
         bottom:35%;
-        left: 10px;
+       
         color: white;
         font-size: 20px;
         font-weight: bold;
         z-index: 2; /* Ensure text is above overlay */
-        margin-left:5%;
+       
     }
+
+    /* .overlay-text {
+        position: absolute;
+        bottom:35%;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        z-index: 2;
+        margin-left:5%;
+    } */
     
     .overlay-text p {
         color:white !important;
